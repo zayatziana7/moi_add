@@ -22,4 +22,5 @@ class ApiYandex:
 def test_66666():
     api = ApiYandex()
     r = api.get_(1)
+
     print(r.text)

@@ -16,3 +16,5 @@ def driver_1():
     # browser.execute_script("document.body.style.zoom='zoom 125%'")
     yield browser
     browser.quit()
+
+

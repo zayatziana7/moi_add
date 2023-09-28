@@ -14,3 +14,4 @@ class AuthPage(BaseUIMethods):
         self.element_presence(locator=Locators.passp_field_passwd, driver=self.driver).send_keys(password)
 
 
+
