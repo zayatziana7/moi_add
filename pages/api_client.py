@@ -18,3 +18,4 @@ class ApiClient:
     def post(self, path: str, headers: str = None, params:dict[str, Any] = None, time_out: int = 180, data=None, json=None):
         self.latest_request = requests.post(url=f'{self.base_url}{path}', headers=headers, params=params, timeout=time_out, data = data, json = json)
         self.check_status_code(status_code=200)
+

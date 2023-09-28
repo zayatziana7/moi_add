@@ -13,3 +13,4 @@ class AuthPage(BaseUIMethods):
     def insert_password(self, password: str) -> None:
         self.element_presence(locator=Locators.passp_field_passwd, driver=self.driver).send_keys(password)
 
+
