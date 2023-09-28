@@ -6,11 +6,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 class BaseUIMethods:
 
-    def init(self, driver: WebDriver):
+    def __init__(self, driver: WebDriver):
         self.driver = driver
 
     # получение элемента
-    def element_presence(self, locator: tuple[str, str], driver: WebDriver, message: str,
+    def element_presence(self, locator: tuple[str, str], driver: WebDriver, message: str='',
                          waiting_time: int = 10) -> WebElement:
         """
         Функция на поиск элемента на странице
