@@ -67,3 +67,4 @@ class BaseUIMethods:
         current_url = self.driver.current_url
         self.driver.refresh()
         assert current_url == self.driver.current_url
+
